@@ -1,0 +1,26 @@
+.main-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.itenerary {
+  padding: 20px;
+}
+
+img {
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .main-container {
+    grid-template-columns: 1fr;
+  }
+
+  .itenerary {
+    padding: 10px;
+  }
+
+  .map {
+    display: none;
+  }
+}

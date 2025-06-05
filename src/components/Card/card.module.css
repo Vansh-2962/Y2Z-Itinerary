@@ -1,0 +1,229 @@
+.utilities {
+  margin-left: calc(700px - 654px);
+  display: flex;
+  align-items: start;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.cardContainer {
+  width: 700px;
+  height: 144px;
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  touch-action: none;
+}
+.imageWrapper {
+  position: relative;
+}
+
+.locationPin {
+  position: absolute;
+  top: 38px;
+  left: -11px;
+}
+
+.menu {
+  width: 24px;
+  height: 144px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8392ab;
+}
+
+.image {
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.content {
+  width: calc(700px - 24px);
+  height: 144px;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+}
+
+.textContent {
+  margin-left: 10px;
+  width: 524px;
+  height: 144px;
+  padding: 18px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.titleAndIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 524px;
+}
+
+.icons {
+  display: flex;
+  gap: 8px;
+}
+
+.ratingsContainer {
+  display: flex;
+  font-size: 14px;
+  font-weight: 400;
+  gap: 8px;
+  margin-top: 10px;
+  color: #6c757d;
+}
+
+.descContainer {
+  width: 524px;
+  height: 54px;
+  border-radius: 12px;
+  gap: 8px;
+  background-color: #f8f9fa;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;
+  margin-top: 10px;
+}
+
+.descContainer small {
+  font-weight: 400;
+  font-size: 14px;
+  color: #343a40;
+}
+
+.docContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  width: 120px;
+  height: 35px;
+  padding: 8px;
+  margin-top: 0px;
+  gap: 15px;
+  border: 0.2px solid #e9ecef;
+}
+
+.container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.2px dashed #e9ecef;
+}
+.mobileViewDescContainer {
+  display: none;
+}
+
+.ellipsisVeticalIcon {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .utilities {
+    margin-left: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30px;
+  }
+  .docContainer {
+    width: 100%;
+    flex: 1;
+    margin-top: 10px;
+    width: 220px;
+  }
+  .container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.8px dashed #e9ecef;
+  }
+
+  .imageWrapper img {
+    width: 64px;
+    height: 64px;
+    border-radius: 4.57px;
+  }
+  .locationPin {
+    position: absolute;
+    top: 18px;
+    left: -11px;
+  }
+
+  .cardContainer {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+  }
+
+  .menu {
+    /* width: 100%; */
+    height: auto;
+    justify-content: center;
+  }
+
+  .content {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+  }
+
+  .content image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .textContent {
+    width: 100%;
+    height: auto;
+    padding-left: 0;
+  }
+
+  .titleAndIcons {
+    width: 100%;
+  }
+
+  .descContainer {
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  .mobileViewDescContainer {
+    display: flex;
+    width: 292px;
+    height: 54px;
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+    /* white-space: nowrap; */
+    margin-top: -7px;
+  }
+
+  .paperClipIcon {
+    display: none;
+  }
+  .ellipsisVeticalIcon {
+    display: flex;
+  }
+  .trashIcon {
+    display: none;
+  }
+
+  .docContainer {
+    width: auto;
+    height: auto;
+    padding: 4px;
+  }
+}

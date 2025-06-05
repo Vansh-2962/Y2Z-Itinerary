@@ -1,0 +1,17 @@
+/* .imageWrapper {
+  position: relative;
+}
+
+.locationPin {
+  position: absolute;
+  top: 38px;
+  left: -8px;
+} */
+
+.text {
+  font-size: 0.7rem;
+  color: #ffffff;
+  position: absolute;
+  left: 34%;
+  top: 10%;
+}
